@@ -4,6 +4,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-top: 5rem;
     }
 
     &__physical, &__cv {
@@ -19,15 +20,14 @@
         display: inline-block;  
         background-color: $color-tertiary;      
         color: $color-light;
-        position: relative;
-        cursor: pointer;
+        position: relative;        
 
         &:not(:last-child) {
             margin-right: 2rem;
         }
 
         &:hover .contact__icon {
-            transform: translateY(-4rem);
+            
         }
     }    
 
@@ -41,8 +41,8 @@
         line-height: 14rem;            
         background-color: $color-primary;
         font-size: $font-size-xl;
-        z-index: 1;
-        transition: .3s;        
+        z-index: 1;        
+        transform: translateY(-4rem);
     }
 
     &__detail {
@@ -55,6 +55,7 @@
     }
 
     &__button {                
+        margin-top: 4rem;
         background-color: $color-primary;
         color: $color-white;
         padding: 2rem 2.8rem;
