@@ -1,0 +1,100 @@
+.level-1 { border-bottom: 5px solid $color-level-1 }
+.level-2 { border-bottom: 5px solid $color-level-2 }
+.level-3 { border-bottom: 5px solid $color-level-3 }
+.level-4 { border-bottom: 5px solid $color-level-4 }
+.level-5 { border-bottom: 5px solid $color-level-5 }
+.level-6 { border-bottom: 5px solid $color-level-6 }
+
+.skills {
+    &__level {
+        &-explain { margin-bottom: 6rem; }        
+
+        &-wrapper { display: flex; flex-direction: row; }
+        
+        &-1, &-2, &-3, &-4, &-5, &-6 {
+            height: 2rem;
+            width: 2rem;
+            margin-right: .8rem;
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+                position: absolute;
+                bottom: -3rem;
+                left: 2.3rem;      
+
+                padding: .3rem;
+                border-radius: 3px;
+
+                background-color: $color-primary;
+                
+                font-size: $font-size-m ;
+                
+                opacity: 0;
+                transition: .5s;
+            }
+
+            &:hover::before { opacity: 1; }
+        }
+
+        &-1 {
+            background-color: $color-level-1;
+
+            &::before {
+                content: "Know the basic. WHAT is it?";
+                min-width: 21rem;
+                background-color: $color-level-1;
+                color: $color-white;
+            }
+        }
+        &-2 {
+            background-color: $color-level-2;
+
+            &::before {
+                content: "Is able to apply it into the projects. HOW to use it?";
+                min-width: 38rem;
+                background-color: $color-level-2;
+                color: $color-white;
+            }
+        }
+        &-3 {
+            background-color: $color-level-3;
+            &::before {
+                content: "Understand the concepts. WHY is it?";
+                min-width: 28rem;
+                background-color: $color-level-3;
+                color: $color-white;
+            }
+        }
+        &-4 {
+            background-color: $color-level-4;
+            &::before {
+                content: "Have a strong understanding and know which cases to use it. WHEN is it?";
+                min-width: 42rem;
+                bottom: -5rem;
+                background-color: $color-level-4;
+                color: $color-white;
+            }
+        }        
+        &-5 {
+            background-color: $color-level-5;
+            &::before {
+                content: "Have a deep and wide understanding. Are able to explain the fundamental to others";
+                min-width: 42rem;
+                bottom: -5rem;
+                background-color: $color-level-5;
+                color: $color-white;
+            }
+        }
+        &-6 {
+            background-color: $color-level-6;
+            &::before {
+                content: "Crystal clear about this skill. Are able to understand the core theories and join hand contributing to the community";
+                min-width: 45rem;
+                bottom: -5rem;
+                background-color: $color-level-6;
+                color: $color-white;
+            }
+        }   
+    }
+}

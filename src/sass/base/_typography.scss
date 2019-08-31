@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,700i&display=swap&subset=vietnamese');
+
+body { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}     
+
+.header-primary {
+    font-size: $font-size-l;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: $color-primary;
+}
+
+.emphasize__text {
+    font-weight: normal !important;
+    color: $color-tertiary !important;
+}
+
+.nav__link {
+    font-size: $font-size-l;
+    font-weight: normal;
+    text-decoration: none;
+    color: $color-light;
+    text-transform: uppercase;
+}
+
+.home {
+    &__heading {
+        &-main {
+            font-size: $font-size-xxxxl;
+            color: $color-primary;
+            text-transform: uppercase;        
+        }
+        &-sub {
+            color: $color-tertiary;
+        }
+    }
+
+    &__title {    
+        &-main {
+            font-size: $font-size-xxl;
+            color: rgba($color-primary, .8);
+            text-align: center;
+        }
+    
+        &-sub {        
+            color: $color-light;
+        }
+    }
+}
+
+.about, .skills, .works, .edu, .contact {
+    &__heading {
+        font-size: $font-size-xxxl;
+        text-transform: uppercase;
+    }   
+
+    &__text {
+        font-size: $font-size-l;
+    }
+}
+
+.about {    
+    .content {        
+        &__title {
+            font-size: $font-size-l;
+            font-weight: bold;
+        }
+
+        &__detail {            
+            font-size: $font-size-m;
+            font-weight: normal;
+            word-spacing: 1.8px;
+            line-height: 2rem;
+        }
+    }
+}
+
+.edu__timeline {
+    font-size: $font-size-m;
+
+    .timeline {
+        &__content {
+            cursor: pointer;
+        }
+
+        &__title {
+            color: $color-secondary-dark;
+            filter: brightness(.7);
+            font-weight: 800;        
+        }
+    
+        &__time h3 {
+            color: rgba($color-dark-2, .9);
+            font-size: $font-size-m;
+            font-style: italic;
+            font-weight: lighter;
+        }
+    }    
+}

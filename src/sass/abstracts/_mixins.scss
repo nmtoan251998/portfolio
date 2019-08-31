@@ -1,0 +1,57 @@
+@mixin style-header-text($in--font-size, $in--letter-spacing) {    
+    letter-spacing: $in--letter-spacing;
+    font-size: $in--font-size;    
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;        
+}
+
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absPos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin breakpoint($point) {
+    @if $point == mobile {
+        @media (max-width: 320px) {
+            @content ;
+        }
+    }
+    @else if $point == tablet {
+        @media (max-width: 900px) {
+            @content ;
+        }
+    }
+    @else if $point == laptop {
+        @media (max-width: 1280px) {
+            @content ;
+        }
+    }
+    @else if $point == desktop {
+        @media (min-width: 1500px) {
+            @content ;
+        }
+    }
+}
+
+@mixin moveInAnimation($xPos, $yPos, $status) {
+    transform: translate($xPos, $yPos);
+    opacity: $status;
+}
+
+@mixin fadedAnimation($times, $status) {
+    transform: scale($times);
+    opacity: $status;
+}
+

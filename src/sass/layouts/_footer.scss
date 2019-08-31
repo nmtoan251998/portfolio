@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;       
+    height: 10vh;
+    color: $color-light;        
+    font-size: $font-size-m; 
+
+    &__text {
+        text-align: center;
+    }
+
+    &__heart {
+        color: $color-secondary-dark;
+    }
+
+    @include breakpoint (laptop) {
+        height: 8.5vh;
+    }
+}
+
+.current {
+    background-color: white;
+    
+    & > a {
+        color: $color-primary;
+    }
+}

@@ -1,0 +1,91 @@
+.edu {                
+    &__timeline {
+        position: relative;
+        width: 100%;        
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background-color: black;
+        }
+    }
+
+    &__menu {
+        @include clearfix;
+    }
+
+    &__item {
+        transform: translateX(-5rem);
+        opacity: 0;
+        visibility: hidden;
+        transition: .6s all;
+
+        &--active {            
+            transform: translateX(0);            
+            opacity: 1;
+            visibility: visible;
+            transition: .6s all;
+        }
+
+        position: relative;
+        width: 50%;        
+        clear: both;
+        height: 8.5rem;
+
+        &--ctu { height: 22rem; }
+        &--leader { height: 15rem; }
+        &--acas { height: 15rem; }        
+        &--creator { height: 18rem; }        
+        &--coders { height: 21rem; }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: .8rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $color-secondary;
+            box-shadow: 0 0 0 4px rgba($color-secondary, .4);
+        }
+
+        &:nth-child(odd) {
+            float: left;
+            text-align: right;
+            padding-right: 2rem;
+
+            &::before {                
+                right: -6px;
+            }
+        }
+
+        &:nth-child(even) {
+            float: right;
+            text-align: left;  
+            padding-left: 2rem;  
+            
+            &::before {
+                left: -4px;
+            }
+        }   
+    }    
+
+    .timeline {
+        &__title {
+            &:hover + .timeline__detail {
+                opacity: 1;
+                visibility: visible;
+                display: block;
+            }
+        }
+
+        &__detail {            
+            opacity: 0;
+            visibility: hidden;   
+            display: none;         
+        }
+    }
+}

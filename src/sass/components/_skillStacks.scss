@@ -1,0 +1,49 @@
+.skills {
+    .slick-list {
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+
+    .slick-slide {
+        margin-right: 2rem;
+    }
+
+    &__icon {
+        width: 8rem;
+        height: 6rem;
+        
+        &-wrapper {                                          
+            outline: none;  
+            padding-bottom: .5rem;
+            color: $color-dark;
+            font-weight: 700;            
+        }
+    }               
+
+    &__fe, &__be, &__others, &__cl, &__db {
+        display: flex;        
+        align-items: center;
+
+        height: 10rem;
+        width: 30rem;
+
+        box-shadow: $color-box-shadow-medium;
+        border-radius: 5px;
+    }
+
+    &__stacks-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 30rem));
+        grid-column-gap: 6.5rem;   
+        grid-row-gap: 2rem;
+        
+        @include breakpoint (laptop) {
+            grid-column-gap: 2rem;   
+        }
+
+        @include breakpoint (desktop) {
+            grid-column-gap: 12rem;   
+        }
+    }    
+}

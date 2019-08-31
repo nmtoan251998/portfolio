@@ -1,0 +1,28 @@
+/**
+* reset the universal setting or box-model
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/**
+* default font-size = 10px;
+*/
+html { 
+    font-size: 62.5%;    
+    scroll-behavior: smooth;      
+}
+
+body { 
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+ul { list-style-type: none; }
+
+a { text-decoration: none; }

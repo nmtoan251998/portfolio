@@ -1,0 +1,30 @@
+.btn__scrolltop {
+    position: fixed;
+    z-index: 98;
+    right: 1rem;    
+    bottom: 8px;
+
+    padding: 0;
+
+    background-color: $color-secondary-dark;
+    height: 4rem;
+    width: 4rem;
+    @include breakpoint (laptop) {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    transition: .6s;
+    visibility: hidden;
+    opacity: 0;
+    
+    color: $color-light;
+
+    & i {
+        font-size: $font-size-xl;
+    }
+
+    @include breakpoint (laptop) {
+        bottom: 4px;
+    }
+}

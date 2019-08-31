@@ -1,0 +1,42 @@
+// Text
+.u-text-center { text-align: center; }
+.u-text-left { text-align: left; }
+
+// Padding
+.u-pt-s { padding-top: 1rem; }
+.u-pt-m { padding-top: 2.5rem; }
+.u-pt-l { padding-top: 5rem; }
+
+.u-pb-s { padding-bottom: 1rem; }
+.u-pb-m { padding-bottom: 2.5rem; }
+.u-pb-l { padding-bottom: 5rem; }
+
+// Margin
+.u-mt-s { margin-top: 1rem; }
+.u-mt-m { margin-top: 2rem; }
+.u-mt-l { margin-top: 5rem; }
+.u-mt-xl { margin-top: 7.5rem; }
+.u-mt-xxl { margin-top: 10rem; }
+.u-mt-xxxl { margin-top: 12.5rem; }
+
+.u-mb-s { margin-bottom: 1rem; }
+.u-mb-m { margin-bottom: 2rem; }
+.u-mb-l { margin-bottom: 5rem; }
+.u-mb-xl { margin-bottom: 7.5rem; }
+.u-mb-xxl { margin-bottom: 10rem; }
+.u-mb-xxxl { margin-bottom: 12.5rem; }
+
+// Float
+.u-float-left { float:left; }
+.u-float-right { float:right; }
+
+// Body dark layer
+.u-dark-layer {
+    background-color: rgba(black, .7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 1000vh;
+    width: 100%;
+    z-index: 98;
+}

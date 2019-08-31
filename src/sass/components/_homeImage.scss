@@ -1,0 +1,18 @@
+.home {
+    background-image: url('https://res.cloudinary.com/dxrg9mbke/image/upload/v1567213318/portfolio/coders.offline-1_ehvmfl.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 99999;
+        
+        background-color: rgba($color-dark, .2);
+    }
+}

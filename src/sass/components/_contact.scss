@@ -1,0 +1,63 @@
+.contact {
+    &__info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__physical, &__cv {
+        width: 100%;
+        display: flex;
+        justify-content: center;        
+    }
+
+    &__method {        
+        width: 25rem;
+        height: 14rem;
+        text-align: center;
+        display: inline-block;  
+        background-color: $color-tertiary;      
+        color: $color-light;
+        position: relative;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+        &:hover .contact__icon {
+            transform: translateY(-4rem);
+        }
+    }    
+
+    &__icon {
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        line-height: 14rem;            
+        background-color: $color-primary;
+        font-size: $font-size-xl;
+        z-index: 1;
+        transition: .3s;        
+    }
+
+    &__detail {
+        font-size: $font-size-l;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 10px 0;
+    }
+
+    &__button {                
+        background-color: $color-primary;
+        color: $color-white;
+        padding: 2rem 2.8rem;
+    }
+}
+

@@ -1,0 +1,55 @@
+// NAVBAR UNIT
+$left-nav-bar-width: 20%;
+
+// Colors
+$color-primary: #041230;
+$color-primary-dark: #010611;
+
+$color-secondary: #FF9D9B;
+$color-secondary-dark: rgb(223, 106, 104);
+
+$color-tertiary: #E4AF56;
+$color-tertiary-light: rgb(226, 186, 117);
+
+$color-white: #EBF2FA;
+
+$color-light: #FFFFFF;
+$color-light-2: #f8f8f8;
+
+$color-gray: #666;
+$color-gray-1: #DEDEDE;
+$color-gray-2: rgb(197, 196, 196);
+
+$color-grey-dark: rgb(82, 78, 78);
+
+$color-dark: #181a2f;
+$color-dark-1: #222222;
+$color-dark-2: #333333;
+
+// youtube button
+$color-youtube-btn-hover: rgb(238, 99, 96);
+
+// skill levels
+$color-level-1: rgb(188, 110, 240);
+$color-level-2: rgb(110, 183, 231);
+$color-level-3: rgb(67, 197, 111);
+$color-level-4: rgb(236, 184, 26);
+$color-level-5: rgb(240, 125, 54);
+$color-level-6: rgb(245, 47, 43);
+
+// Font sizes
+$font-size-s: 1rem;
+$font-size-m: 1.6rem;
+$font-size-l: 1.8rem;
+$font-size-xl: 2.4rem;
+$font-size-xxl: 3.8rem;
+$font-size-xxxl: 5rem;
+$font-size-xxxxl: 10rem;
+
+// Text shadow
+$color-text-shadow-secondary: 0 5px 10px rgba($color-secondary, .15);
+
+// Box shadow
+$color-box-shadow-slight: 0 0 10px rgba($color-dark, .15);
+$color-box-shadow-medium: 0 0 10px rgba($color-dark, .25);
+$color-box-shadow-strong: 0 0 10px rgba($color-dark, .5);
