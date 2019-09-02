@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
         {
             "img": "https://res.cloudinary.com/dxrg9mbke/image/upload/v1567216208/portfolio/icon/redis-icon_qm2cud",
             "title": "Redis",
-            "level": "2",
+            "level": "3",
         },
         {
             "img": "https://res.cloudinary.com/dxrg9mbke/image/upload/v1567216208/portfolio/icon/mysql-icon_crpgcy",
@@ -130,17 +130,17 @@ document.addEventListener("DOMContentLoaded", function() {
         {
             "img": "https://res.cloudinary.com/dxrg9mbke/image/upload/v1567216208/portfolio/icon/git-icon_eligi0",
             "title": "Git",
-            "level": "5",
+            "level": "4",
         },    
         {
             "img": "https://res.cloudinary.com/dxrg9mbke/image/upload/v1567216208/portfolio/icon/npm-icon_d4jocz",
             "title": "NPM",
-            "level": "3",
+            "level": "4",
         },
         {
             "img": "https://res.cloudinary.com/dxrg9mbke/image/upload/v1567216208/portfolio/icon/linux-icon_mggtzg",
             "title": "Linux",
-            "level": "3",
+            "level": "4",
         },    
         {
             "img": "https://res.cloudinary.com/dxrg9mbke/image/upload/v1567216208/portfolio/icon/heroku-icon_jio3mm",

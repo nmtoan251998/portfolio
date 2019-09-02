@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf rm dist/*",
-    "start": "parcel src/views/index.html --open --port 3000",
+    "start": "npm run clean && parcel src/views/index.html --open --port 3000",
     "build": "npm run clean && parcel build src/views/index.html --no-source-maps --detailed-report"
   },
   "keywords": [],
