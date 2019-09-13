@@ -5,6 +5,10 @@
         flex-direction: column;
         justify-content: center;
         padding-top: 5rem;
+
+        @include breakpoint (l-mobile) {
+            padding-top: 0;
+        }
     }
 
     &__physical, &__cv {
@@ -14,6 +18,7 @@
     }
 
     &__method {        
+        overflow: hidden;
         width: 25rem;
         height: 14rem;
         text-align: center;
@@ -21,7 +26,7 @@
         background-color: $color-tertiary;      
         color: $color-light;
         position: relative;        
-
+        
         &:not(:last-child) {
             margin-right: 2rem;
         }
@@ -43,6 +48,11 @@
         font-size: $font-size-xl;
         z-index: 1;        
         transform: translateY(-4rem);
+
+        @include breakpoint (l-mobile) {
+            transform: translateY(-1rem);
+            height: 80%;
+        }
     }
 
     &__detail {
@@ -51,7 +61,39 @@
         width: 100%;
         left: 0;
         bottom: 0;
-        padding: 10px 0;
+        padding: 10px 0;    
+        
+        &--hidden {
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+
+            @include breakpoint(l-mobile) {
+                opacity: 1;
+                visibility: visible;
+                display: block;
+            }
+        }
+
+        &--visible {
+            @include breakpoint(l-mobile) {
+                opacity: 0;
+                visibility: hidden;
+                display: none;
+            }
+        }
+
+        @include breakpoint(tablet) {
+            font-size: $font-size-m;
+        }
+
+        @include breakpoint(md-tablet) {
+            font-size: $font-size-s;            
+        }
+
+        @include breakpoint(l-mobile) {
+            font-size: $font-size-xs;            
+        }
     }
 
     &__button {                

@@ -7,7 +7,7 @@
     
     &__item {
         display: inline-block;
-        transition: .2s;
+        transition: .2s;        
 
         &:hover {
             transform: scale(1.1) translateY(-2px);
@@ -16,12 +16,20 @@
         
         &:not(:last-child) {
             margin-right: 4rem;
+
+            @include breakpoint(l-mobile) {
+                margin-right: 2rem;
+            }
         }
     }
     
     &__icon {
         color: $color-primary;
         font-size: $font-size-xxxl;   
-        cursor: pointer;                   
+        cursor: pointer;         
+        
+        @include breakpoint(l-mobile) {
+            font-size: 3.5rem;
+        }        
     }
 }

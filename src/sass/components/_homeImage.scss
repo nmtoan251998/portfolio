@@ -4,6 +4,38 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    &__heading {
+        &-main {
+            font-size: $font-size-xxxxl;
+            color: $color-primary;
+            text-transform: uppercase;   
+            
+            @include breakpoint(l-mobile) {
+                font-size: $font-size-xxxl;
+                text-align: center;
+            }
+        }
+        &-sub {
+            color: $color-primary;            
+        }
+    }
+
+    &__title {    
+        &-main {
+            font-size: $font-size-xxl;
+            color: rgba($color-primary, .8);
+            text-align: center;
+
+            @include breakpoint(l-mobile) {
+                font-size: $font-size-xl;
+            }
+        }
+    
+        &-sub {        
+            color: $color-light;
+        }
+    }
+
     &::after {
         content: "";
         position: absolute;

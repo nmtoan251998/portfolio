@@ -1,6 +1,16 @@
 .wrapper {
     display: grid;
-    grid-template-columns: 14.5% 85.5%;
+    grid-template-columns: 14.5% 85.5%;    
+
+    @include breakpoint(md-tablet) {
+        grid-template-columns: 1fr;
+    }
+
+    @include breakpoint(l-mobile) {
+        width: 100vw;
+        grid-template-columns: 100vw;
+        overflow: hidden;
+    }
 }
 
 .home {
@@ -14,14 +24,23 @@
     height: 100vh;
 
     .heading__wrapper {
-        margin-bottom: 5rem;
+        margin-bottom: 5rem;                
     }    
 }
 
 .about {    
     width: 100%;
     padding-top: 5rem;
-    margin-bottom: 15rem;
+    margin-bottom: 15rem;    
+
+    @include breakpoint(sm-laptop) {
+        margin-bottom: 5rem;
+    }
+
+    @include breakpoint (tablet) {
+        padding-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
 
     .heading__wrapper {
         border-left: 8px solid $color-secondary;
@@ -32,8 +51,35 @@
 
     &-wrapper {
         margin-left: 5%;
-        margin-right: 5%;
+        margin-right: 5%;        
     }
+}
+
+.contact {    
+    padding-bottom: 4rem;   
+    padding-top: 5rem;    
+    margin-top: 5rem;    
+    margin-bottom: 5rem;
+    width: 100%;    
+    background-color: $color-light-2; 
+
+    @include breakpoint (tablet) {
+        margin-top: 0;
+        margin-bottom: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .heading__wrapper {
+        border-left: 8px solid $color-secondary;
+        padding-left: 1rem;
+        margin-bottom: 6rem;        
+        cursor: default;
+    }
+
+    &__wrapper {
+        margin-left: 5%;
+        margin-right: 5%;
+    }    
 }
 
 .skills {
@@ -46,6 +92,10 @@
         margin-bottom: 4rem;
         cursor: default;
     }
+
+    @include breakpoint (tablet) {
+        margin-bottom: 2.5rem;
+    }
     
     &__wrapper {
         margin-left: 5%;
@@ -55,19 +105,27 @@
 .works {
     background-color: $color-light-2;
     padding-top: 5rem;
-    width: 100%;
+    width: 100%;    
 
     .heading__wrapper {
         border-left: 8px solid $color-secondary;
         padding-left: 1rem;
         margin-bottom: 6rem;        
         cursor: default;
+
+        @include breakpoint (tablet) {
+            margin-bottom: 4rem;
+        }
     }
 
     &__wrapper {
         margin-left: 5%;
         margin-right: 5%;
     }    
+
+    @include breakpoint (tablet) {
+        padding-top: 2.5rem;
+    }
 }
 
 .edu {    
@@ -75,26 +133,10 @@
     margin-bottom: 5rem;
     width: 100%;    
 
-    .heading__wrapper {
-        border-left: 8px solid $color-secondary;
-        padding-left: 1rem;
-        margin-bottom: 6rem;        
-        cursor: default;
+    @include breakpoint (tablet) {
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
     }
-
-    &__wrapper {
-        margin-left: 5%;
-        margin-right: 5%;
-    }    
-}
-
-.contact {    
-    padding-bottom: 4rem;   
-    padding-top: 5rem;    
-    margin-top: 5rem;    
-    margin-bottom: 5rem;
-    width: 100%;    
-    background-color: $color-light-2; 
 
     .heading__wrapper {
         border-left: 8px solid $color-secondary;

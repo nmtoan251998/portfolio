@@ -1,4 +1,25 @@
-.edu {                
+.edu {   
+    font-size: $font-size-m;
+
+    .timeline {
+        &__content {
+            cursor: pointer;
+        }
+
+        &__title {
+            color: $color-secondary-dark;
+            filter: brightness(.7);
+            font-weight: 800;        
+        }
+    
+        &__time h3 {
+            color: rgba($color-dark-2, .9);
+            font-size: $font-size-m;
+            font-style: italic;
+            font-weight: lighter;
+        }
+    }    
+    
     &__timeline {
         position: relative;
         width: 100%;        
@@ -10,6 +31,10 @@
             width: 2px;
             height: 100%;
             background-color: black;
+
+            @include breakpoint (md-mobile) {
+                height: 110%;
+            }
         }
     }
 
@@ -22,6 +47,16 @@
         opacity: 0;
         visibility: hidden;
         transition: .6s all;
+
+        @include breakpoint(sm-laptop) {
+            opacity: 1 !important;
+            visibility: visible !important;
+            transform: translateX(0);
+        }
+
+        @include breakpoint (l-mobile) {
+
+        }
 
         &--active {            
             transform: translateX(0);            
@@ -36,7 +71,13 @@
         height: 8.5rem;
 
         &--ctu { height: 22rem; }
-        &--leader { height: 15rem; }
+        &--leader { 
+            height: 15rem; 
+
+            @include breakpoint (md-mobile) {
+                margin-top: 10rem;
+            }
+        }
         &--acas { height: 15rem; }        
         &--creator { height: 18rem; }        
         &--coders { height: 21rem; }

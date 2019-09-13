@@ -8,6 +8,10 @@
     background-color: $color-primary;
     overflow: hidden;    
 
+    @include breakpoint(md-tablet) {
+        display: none;
+    }
+
     &__menu {
         height: 100%;
         width: 100%;

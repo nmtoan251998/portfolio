@@ -29,6 +29,14 @@
 
         box-shadow: $color-box-shadow-medium;
         border-radius: 5px;
+        
+        &-wrapper {
+            @include breakpoint (l-mobile) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     }
 
     &__stacks-wrapper {
@@ -38,12 +46,42 @@
         grid-column-gap: 6.5rem;   
         grid-row-gap: 2rem;
         
-        @include breakpoint (laptop) {
-            grid-column-gap: 2rem;   
+        @include breakpoint (desktop) {
+            grid-column-gap: 8rem;   
         }
 
-        @include breakpoint (desktop) {
-            grid-column-gap: 12rem;   
+        @include breakpoint (laptop) {            
+            grid-column-gap: 3rem;
+        }                
+
+        @include breakpoint (md-laptop) {
+            grid-column-gap: 6rem;
         }
+
+        @include breakpoint (tablet) {            
+            width: 50%;
+            margin: 0 auto;            
+            grid-column-gap: 0rem;
+        }        
+
+        @include breakpoint (md-tablet) {
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+            width: 75%;
+            margin: 0;
+            grid-column-gap: 15rem;
+        }
+
+        @include breakpoint (l-mobile) {
+            width: 58.5%;            
+            margin: 0 auto;
+        }        
     }    
 }
+
+.animation-text__hidden {
+    @include breakpoint(tablet) {
+        opacity: 1 !important;
+        max-width: unset !important;
+    }
+}
+

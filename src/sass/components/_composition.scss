@@ -3,6 +3,19 @@
     width: 45%;
     margin-left: 10%;
 
+    @include breakpoint(desktop) {
+        margin-bottom: 25rem;      
+    }
+
+    @include breakpoint(sm-laptop) {
+        margin-left: 0;
+        width: 55%;
+    }
+
+    @include breakpoint(tablet) {
+        margin-left: 5%;        
+    }
+
     .composition__img{
         position: absolute;
         width: 100%;   

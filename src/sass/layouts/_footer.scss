@@ -15,8 +15,21 @@
         color: $color-secondary-dark;
     }
 
+    @include breakpoint (desktop) {
+        margin-top: 30rem;
+        height: 8vh;
+    }
+
     @include breakpoint (laptop) {
         height: 8.5vh;
+    }
+
+    @include breakpoint (l-mobile) {
+        margin-top: 15rem;
+    }
+
+    @include breakpoint (md-mobile) {
+        margin-top: 18.5rem;
     }
 }
 

@@ -24,22 +24,47 @@
 
 @mixin breakpoint($point) {
     @if $point == mobile {
-        @media (max-width: 320px) {
+        @media only screen and (max-width: 320px) {
+            @content ;
+        }
+    }
+    @if $point == md-mobile {
+        @media only screen and (max-width: 375px) {
+            @content ;
+        }
+    }
+    @if $point == l-mobile {
+        @media only screen and (max-width: 450px) {
+            @content ;
+        }
+    }
+    @else if $point == md-tablet {
+        @media only screen and (max-width: 760px) {
             @content ;
         }
     }
     @else if $point == tablet {
-        @media (max-width: 900px) {
+        @media only screen and (max-width: 900px) {
+            @content ;
+        }
+    }
+    @else if $point == sm-laptop {
+        @media only screen and (max-width: 1150px) {
+            @content ;
+        }
+    }
+    @else if $point == md-laptop {
+        @media only screen and (max-width: 1200px) {
             @content ;
         }
     }
     @else if $point == laptop {
-        @media (max-width: 1280px) {
+        @media only screen and (max-width: 1280px) {
             @content ;
         }
-    }
+    }    
     @else if $point == desktop {
-        @media (min-width: 1500px) {
+        @media only screen and (min-width: 1500px) {
             @content ;
         }
     }
