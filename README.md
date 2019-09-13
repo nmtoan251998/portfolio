@@ -26,5 +26,10 @@ $ npm audit fix
 ## Available Scripts
 Development
 ```
-$ npm run dev
+$ npm start
+```
+
+Production
+```
+$ npm run build
 ```
