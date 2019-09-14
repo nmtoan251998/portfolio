@@ -23,13 +23,22 @@ Just run the below command
 $ npm audit fix
 ```
 
-## Available Scripts
+## Development
 Development
 ```
 $ npm start
 ```
-
-Production
+## Production
+Build production source code
 ```
 $ npm run build
 ```
+
+**HOT FIX**
+
+There will be a problem building production because of files path. After running `npm run build`, you have to go to the .html file in dist/ to rename the path to exact path (sorry forks who use my source code as a serverless web app, I configured the production for server purpose)
+
+```
+$ npm run deploy
+```
+
