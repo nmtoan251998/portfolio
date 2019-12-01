@@ -1,5 +1,17 @@
-.social { 
-    margin: 3rem auto 0;   
+.social {
+    margin: 2rem auto 0;
+    text-align: center;
+    
+    &-intro-text {
+        margin-bottom: 1rem;
+        font-size: $font-size-lg;
+
+        @include breakpoint(mobile-d) {
+            font-size: $font-size-md;
+        }
+    }
+
+    
     .link {
         display: inline-flex;
         justify-content: center;

@@ -84,9 +84,5 @@
         @include breakpoint(lg-laptop-d) {
             min-width: 90%;
         }
-
-        // @include breakpoint(sm-laptop-d) {
-        //     width: 95%;
-        // }
     }
 }
