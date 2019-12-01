@@ -4,6 +4,7 @@
     justify-content: center;
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 3.5rem;
 
     @include breakpoint(md-laptop-d) {
         margin-bottom: 1.5rem;
@@ -24,20 +25,27 @@
         }
 
         @include breakpoint(mobile-d) {
+            margin-top: 2rem;
             height: 30rem;
         }
     }
 
     &-heading {
-        width: 70%;
+        width: 90%;
         margin: 2rem auto 0;
 
-        text-align: left;
+        text-align: center;
         font-size: $font-size-xxl;
         font-weight: 600;
 
+        @include breakpoint(sm-laptop-d) {
+            margin-top: 0;
+            width: 95%;
+        }
+
         @include breakpoint(md-tablet-d) {
-            font-size: $font-size-xl;            
+            font-size: $font-size-xl;
+            margin-top: 2rem;
         }
     }
 
@@ -48,8 +56,17 @@
         text-align: left;
         font-size: $font-size-lg;
 
-        @include breakpoint(md-tablet-d) {
-            font-size: $font-size-md;            
+        @include breakpoint(xs-desktop-d) {
+            min-width: 70%;
+            width: 50%;
+        }
+
+        @include breakpoint(lg-laptop-d) {
+            min-width: 80%;
+        }
+
+        @include breakpoint(lg-laptop-d) {
+            min-width: 90%;
         }
     }
 }
