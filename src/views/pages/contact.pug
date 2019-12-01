@@ -1,25 +1,39 @@
 extends ../layout/common.pug
 block vars
-    - var title="Welcome to Noat portfolio - Home page"
+    - var title="Welcome to Noat portfolio - Contact page"
 
 //- stylesheets
 block link
+    //- fontawesome
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
     //- main file
-    link(rel="stylesheet" href="./../../styles/sass/home.scss")
+    link(rel="stylesheet" href="./../../styles/sass/contact.scss")
 
 block container            
     //- put content here
-    .home-container
-        img.intro-img(src="../../assets/image/undraw_dev_productivity_umsq.svg" alt="Home logo")
+    .contact-container
+        img.intro-img(src="../../assets/image/undraw_personal_info_0okl.svg" alt="Contact logo")
         h1.intro-heading
-            | Hello my friends, I'm Toan and just call me Noat.
+            | Opps, let's me introduce a little bit about myself
         p.intro-text
-            | I am currently working as a Back-end web developer. But when my teammates get into trouble and need my help, I become a superman to take care of their health and motivate them to complete the whole work, I quit.
+            | On May 2, 1998 - a little angel aka Noat was born on a sunny day with a lot of joy and happiness. The location was at Cantho city, which is the most peaceful and beautiful city in Vietnam. Try to get there once, I'm sure it is worth your time.
         p.intro-text
-            | I am also a Cat Father of a stupid fatty cat. She is so crazy, lazy, stupid and scratches me every f***king single time I take her a shower, but I still love her wtf?. 
-            | You are a cat's lover too and want to raise her? 
-            a(href="/contact") Contact me 
-            | and give me a job then I can make money to marry you and we will raise my p*ssy cat together (in case you are a female).
+            | I'm studying in Cantho university in college of Information & Communication Technology in Information Technology major and I will graduate by the time at 2021.
+        p.intro-text
+            | Apart from the school's subjects, I found my passion on Web development in the second year after getting a thought of quitting this major.
+            | So I'm doing my best by doing the freelance web development jobs in my spare time to gain knowledge and...earn money.
+        p.intro-text(style="text-align: center;")
+            | Give me a shot if you want me to work as your co-worker        
+
+        .social
+            a.link.facebook(href="https://facebook.com/noat.2598" target="_blank" title="fb.com/noat.2598")
+                i.icon.fab.fa-facebook-f
+            a.link.github(href="https://github.com/nmtoan251998" target="_blank" title="github.com/nmtoan251998")
+                i.icon.fab.fa-github-alt
+            a.link.mail(href="mailto:nmtoan251998@gmail.com" target="_blank" title="nmtoan251998@gmail.com")
+                i.icon.far.fa-envelope
+            a.link.phone(href="tel:+84967802598" target="_blank" title="+84 967 802 598")
+                i.icon.fas.fa-phone
 
 block script
     //- slick

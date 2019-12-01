@@ -89,6 +89,11 @@
             @content ;
         }
     }
+    @else if $point == xs-desktop-d {
+        @media only screen and (max-width: 1360px) {
+            @content ;
+        }
+    }
     @else if $point == xs-desktop-u {
         @media only screen and (min-width: 1360px) {
             @content ;
@@ -99,11 +104,16 @@
             @content ;
         }
     }
+    @else if $point == desktop-d {
+        @media only screen and (max-width: 1500px) {
+            @content ;
+        }
+    }
     @else if $point == desktop-u {
         @media only screen and (min-width: 1500px) {
             @content ;
         }
-    }
+    }    
     @else if $point == md-desktop-u {
         @media only screen and (min-width: 1600px) {
             @content ;
