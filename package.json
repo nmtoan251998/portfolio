@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf rm dist/*",
-    "start": "npm run clean && parcel ./src/views/pages/home.pug --out-dir ./dist --open --port 3000 --no-cache",
-    "build": "npm run clean && parcel build src/views/pages/ --no-source-maps --detailed-report --no-cache",
+    "start": "npm run clean && parcel ./src/views/pages/*.pug --out-dir ./dist --open --port 3000 --no-cache",
+    "build": "npm run clean && parcel build src/views/pages/*.pug --out-dir ./dist --no-source-maps --detailed-report --no-cache --no-minify",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
