@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 5rem 7.5rem 0;
+    margin-bottom: 1.5rem;
+
+    // change header lists from row to column
+    @include breakpoint(tablet-d) {
+        flex-direction: column;
+        align-items: center;        
+    }
+
+    @include breakpoint(mobile-d) {
+        margin-bottom: 0rem;
+    }
+}
+
+.img-logo {
+    width: 30rem;
+    height: 15rem;
+
+    // add margin between 2 lists
+    @include breakpoint(tablet-d) {
+        margin-bottom: 2rem;
+    }   
+}
+
+.right-list {
+    display: flex;
+    flex-direction: row;
+
+    font-size: $font-size-lg;
+
+    &-item {
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
+    }
+
+    &-link {
+    
+    }            
+}

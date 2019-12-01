@@ -1,3 +1,55 @@
-.home {
-    
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+
+    @include breakpoint(md-laptop-d) {
+        margin-bottom: 1.5rem;
+    }
+
+    @include breakpoint(xs-laptop-d) {
+        margin-bottom: 3.5rem;
+    }
+}
+
+.intro {
+    &-img {
+        max-width: 100%;
+        height: 50rem;
+
+        @include breakpoint(lg-mobile-d) {
+            height: 40rem;
+        }
+
+        @include breakpoint(mobile-d) {
+            height: 30rem;
+        }
+    }
+
+    &-heading {
+        width: 70%;
+        margin: 2rem auto 0;
+
+        text-align: left;
+        font-size: $font-size-xxl;
+        font-weight: 600;
+
+        @include breakpoint(md-tablet-d) {
+            font-size: $font-size-xl;            
+        }
+    }
+
+    &-text {
+        width: 70%;
+        margin: 2rem auto 0;
+
+        text-align: left;
+        font-size: $font-size-lg;
+
+        @include breakpoint(md-tablet-d) {
+            font-size: $font-size-md;            
+        }
+    }
 }

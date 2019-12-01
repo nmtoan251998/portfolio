@@ -29,14 +29,3 @@
 // Float
 .u-float-left { float:left; }
 .u-float-right { float:right; }
-
-// Body dark layer
-.u-dark-layer {
-    background-color: rgba(black, .7);
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 1000vh;
-    width: 100%;
-    z-index: 98;
-}
