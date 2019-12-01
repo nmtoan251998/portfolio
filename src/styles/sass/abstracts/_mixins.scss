@@ -1,0 +1,118 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absPos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin breakpoint($point) {
+    @if $point == xs-mobile-d {
+        @media only screen and (max-width: 320px) {
+            @content ;
+        }
+    }
+    @if $point == sm-mobile-d {
+        @media only screen and (max-width: 375px) {
+            @content ;
+        }
+    }
+    @if $point == mobile-d {
+        @media only screen and (max-width: 450px) {
+            @content ;
+        }
+    }
+    @if $point == md-mobile-d {
+        @media only screen and (max-width: 520px) {
+            @content ;
+        }
+    }
+    @if $point == lg-mobile-d {
+        @media only screen and (max-width: 580px) {
+            @content ;
+        }
+    }
+    @else if $point == xs-tablet-d {
+        @media only screen and (max-width: 620px) {
+            @content ;
+        }
+    }
+    @else if $point == sm-tablet-d {
+        @media only screen and (max-width: 680px) {
+            @content ;
+        }
+    }
+    @else if $point == tablet-d {
+        @media only screen and (max-width: 720px) {
+            @content ;
+        }
+    }
+    @else if $point == md-tablet-d {
+        @media only screen and (max-width: 780px) {
+            @content ;
+        }
+    }
+    @else if $point == lg-tablet-d {
+        @media only screen and (max-width: 840px) {
+            @content ;
+        }
+    }
+    @else if $point == xs-laptop-d {
+        @media only screen and (max-width: 900px) {
+            @content ;
+        }
+    }
+    @else if $point == sm-laptop-d {
+        @media only screen and (max-width: 980px) {
+            @content ;
+        }
+    }
+    @else if $point == laptop-d {
+        @media only screen and (max-width: 1080px) {
+            @content ;
+        }
+    }
+    @else if $point == md-laptop-d {
+        @media only screen and (max-width: 1200px) {
+            @content ;
+        }
+    }
+    @else if $point == lg-laptop-d {
+        @media only screen and (max-width: 1280px) {
+            @content ;
+        }
+    }
+    @else if $point == xs-desktop-u {
+        @media only screen and (min-width: 1360px) {
+            @content ;
+        }
+    }
+    @else if $point == sm-desktop-u {
+        @media only screen and (min-width: 1440px) {
+            @content ;
+        }
+    }
+    @else if $point == desktop-u {
+        @media only screen and (min-width: 1500px) {
+            @content ;
+        }
+    }
+    @else if $point == md-desktop-u {
+        @media only screen and (min-width: 1600px) {
+            @content ;
+        }
+    }
+    @else if $point == lg-desktop-u {
+        @media only screen and (min-width: 1800px) {
+            @content ;
+        }
+    }
+}
+

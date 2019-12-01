@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf rm dist/*",
-    "start": "npm run clean && parcel src/views/index.html --open --port 3000",
-    "build": "npm run clean && parcel build src/views/index.html --no-source-maps --detailed-report",
+    "start": "npm run clean && parcel ./src/views/pages/home.pug --out-dir ./dist --open --port 3000 --no-cache",
+    "build": "npm run clean && parcel build src/views/pages/ --no-source-maps --detailed-report --no-cache",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
@@ -14,7 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "gh-pages": "^2.1.1",
-    "parcel-bundler": "^1.12.3",
+    "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4",
     "rimraf": "^3.0.0",
     "sass": "^1.22.10"
   }
