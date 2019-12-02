@@ -1,25 +1,27 @@
 extends ../layout/common.pug
 block vars
-    - var title="Welcome to Noat portfolio - Home page"
+    - var title="Welcome to Noat portfolio - CV page"
 
 //- stylesheets
 block link
     //- main file
-    link(rel="stylesheet" href="./../../styles/sass/home.scss")
+    link(rel="stylesheet" href="./../../styles/sass/cv.scss")
 
 block container            
     //- put content here
-    .home-container
-        img.intro-img(src="../../assets/image/undraw_dev_productivity_umsq.svg" alt="Home logo")
-        h1.intro-heading
-            | Hello my friends, I'm Toan and just call me Noat.
-        p.intro-text
-            | I am currently working as a Back-end web developer. But when my teammates get into trouble and need my help, I become a superman to take care of their health and motivate them to complete the whole work, I quit.
-        p.intro-text
-            | I am also a Cat Father of a stupid fatty cat. She is so crazy, lazy, stupid and scratches me every f***king single time I take her a shower, but I still love her wtf?. 
-            | You are a cat's lover too and want to raise her? 
-            a(href="/contact") Contact me 
-            | and give me a job then I can make money to marry you and we will raise my p*ssy cat together (in case you are a female).
+    .cv-container
+        a.intro-text(
+            href="https://res.cloudinary.com/dwvysf04x/image/upload/v1575216658/CV/CV_vi_fg0lpb.pdf"
+            target="_blank")
+            | Download my CV (vi)
+        img.cv-img(src="../../assets/image/cv-vi-ver.svg")
+
+        a.intro-text(
+            href="https://res.cloudinary.com/dwvysf04x/image/upload/v1575216658/CV/CV_vi_fg0lpb.pdf" 
+            target="_blank")
+            | Download my CV (en)
+        img.cv-img(src="../../assets/image/cv-vi-ver.svg")
+        
 
 block script
     //- slick
