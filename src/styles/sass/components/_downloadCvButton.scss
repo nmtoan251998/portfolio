@@ -3,6 +3,11 @@
     border: none;
     padding: 1em 2em;    
     width: 20rem;
+    @include breakpoint(mobile-d) {
+        padding: .8em 1.6em;
+        width: 18rem;
+    }
+
     margin-bottom: 1rem;
     margin-top: 5rem;
 
@@ -12,7 +17,8 @@
     font-weight: 700;
     font-family: 'Roboto Slab', sans-serif;
     letter-spacing: 0.05rem;
-    line-height: 1.5;    
+    line-height: 1.5;
+    text-align: center;
 
     &:focus { outline: 2px dotted $color-primary-light; }
 }
