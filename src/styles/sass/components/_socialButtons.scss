@@ -44,10 +44,10 @@
             text-align: center;
         }
 
-        &.facebook { background-color: #3B5998; }
-        &.github { background-color: #3F3D56; }
-        &.mail { background-color: tomato; }
-        &.phone { background-color: #0089B9; }
+        &.facebook { background-color: $color-btn-facebook; }
+        &.github { background-color: $color-btn-github; }
+        &.mail { background-color: $color-btn-mail; }
+        &.phone { background-color: $color-btn-phone; }
     }
 }
 
