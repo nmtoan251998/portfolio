@@ -4,6 +4,8 @@ block vars
 
 //- stylesheets
 block link
+    //- fontawesome
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
     //- main file
     link(rel="stylesheet" href="./../../styles/sass/home.scss")
 
@@ -14,7 +16,24 @@ block container
         h1.intro-heading
             | Hello my friends, I'm Toan and just call me Noat.
         p.intro-text
-            | After learning programming for about 3 years, I am currently working as a Back-end web developer, so don't afraid to
-            a(href="about")
-                |  contact me 
-            | and give me a job.
+            | I'm currently studying in Cantho university in college of Information & Communication Technology in Information Technology major and I will graduate by the time at 2021.
+        p.intro-text
+            | Apart from the school's subjects, I found my passion in Web development in the second year after getting a thought of quitting this major.
+            | The reason why I love web development because I'm able to use my power to solve my realistic problems, such as automate my daily boring works.
+        p.intro-text
+            | Moreover, to me, to give is to receive. Hence, on October 2018, I joined 
+            a(href="https://coders-x.com/")
+                | CodersX 
+            | community - a non profit programming organization aims to train and provide IT students in Vietnam enough skills and knowledge to work immediately after graduation.
+
+        .social
+            p.social-intro-text
+                | Contact me and then we will have a coffee together.
+            a.link.facebook(href="https://facebook.com/noat.2598" target="_blank" title="fb.com/noat.2598")
+                i.icon.fab.fa-facebook-f
+            a.link.github(href="https://github.com/nmtoan251998" target="_blank" title="github.com/nmtoan251998")
+                i.icon.fab.fa-github-alt
+            a.link.mail(href="mailto:nmtoan251998@gmail.com" target="_blank" title="nmtoan251998@gmail.com")
+                i.icon.far.fa-envelope
+            a.link.phone(href="tel:+84967802598" target="_blank" title="+84 967 802 598")
+                i.icon.fas.fa-phone
