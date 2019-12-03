@@ -1,28 +1,30 @@
 extends ../layout/common.pug
 block vars
-    - var title="Welcome to Noat portfolio - Contact page"
+    - var title="Welcome to Noat portfolio - About page"
 
 //- stylesheets
 block link
     //- fontawesome
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css")
     //- main file
-    link(rel="stylesheet" href="./../../styles/sass/contact.scss")
+    link(rel="stylesheet" href="./../../styles/sass/about.scss")
 
 block container            
     //- put content here
-    .contact-container
-        img.intro-img(src="../../assets/image/undraw_personal_info_0okl.svg" alt="Contact logo")
+    .about-container
+        img.intro-img(src="../../assets/image/undraw_personal_info_0okl.svg" alt="About logo")
         h1.intro-heading
             | Opps, let's me introduce a little bit about myself
         p.intro-text
-            | I'm studying in Cantho university in college of Information & Communication Technology in Information Technology major and I will graduate by the time at 2021.
+            | I'm currently studying in Cantho university in college of Information & Communication Technology in Information Technology major and I will graduate by the time at 2021.
         p.intro-text
-            | Apart from the school's subjects, I found my passion on Web development in the second year after getting a thought of quitting this major.
-            | So I'm doing my best by doing the freelance web development jobs in my spare time to gain knowledge and...earn money.
+            | Apart from the school's subjects, I found my passion in Web development in the second year after getting a thought of quitting this major.
+            | The reason why I love web development because I'm able to use my power to solve my realistic problems, such as automate my daily boring works.
         p.intro-text
-            | Apart from the school's subjects, I found my passion on Web development in the second year after getting a thought of quitting this major.
-            | So I'm doing my best by doing the freelance web development jobs in my spare time to gain knowledge and...earn money.
+            | Moreoever, to me, to give is to receive. Hence, on October 2018, I joined 
+            a(href="https://coders-x.com/")
+                | CodersX 
+            | community - a non profit programming organization aims to train and provide IT students in Vietnam enough skills and knowledge to work immediately after graduation.
 
         .social
             p.social-intro-text
@@ -38,4 +40,4 @@ block container
 
 block script
     //- slick
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
