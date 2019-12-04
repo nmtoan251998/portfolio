@@ -46,18 +46,6 @@
         @include breakpoint(md-tablet-d) {
             font-size: $font-size-xl;
         }
-
-        @include breakpoint(xs-tablet-d) {
-        }
-
-        @include breakpoint(lg-mobile-d) {
-        }
-
-        @include breakpoint(mobile-d) {
-        }
-
-        @include breakpoint(sm-mobile-d) {
-        }
     }
 
     &-text {

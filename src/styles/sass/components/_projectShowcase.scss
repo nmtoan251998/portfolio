@@ -1,0 +1,78 @@
+.project {
+    display: flex;
+    flex-direction: column;    
+    max-width: 95%;
+    margin: 1rem auto 5rem;
+
+    &:not(:nth-child(1)) {
+        border-top: 1px solid $color-primary;
+    }
+    
+    &-img {
+        max-width: 100%;
+    }
+    
+    &-title {
+        font-size: $font-size-xxxl;
+        @include breakpoint(lg-tablet-d) {
+            font-size: $font-size-xxl;
+        }
+
+        font-family: $font-style-project;
+        color: $color-dark-1;
+        text-align: left;
+    }
+
+    &-time {
+        font-size: $font-size-xl;
+        @include breakpoint(lg-tablet-d) {
+            font-size: $font-size-lg;
+        }
+        font-style: italic;
+        font-weight: 600;
+        color: $color-gray;
+        text-align: left;
+    }
+
+    &-info {        
+        font-size: 3.5rem;
+        @include breakpoint(lg-tablet-d) {
+            font-size: 2.6rem;
+        }
+
+        color: $color-tertiary;
+        text-align: left;    
+        font-family: $font-style-project;
+    }
+    
+    &-detail {
+        text-align: left;
+        font-size: 2rem;
+        @include breakpoint(lg-tablet-d) {
+            font-size: 1.8rem;
+        }
+        color: $color-primary;
+        max-width: 90%;
+        margin-bottom: 2.5rem;
+
+        &-list {
+            margin-bottom: 2.5rem;
+            padding-left: 3rem;
+            list-style: disc;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

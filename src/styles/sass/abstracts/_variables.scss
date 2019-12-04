@@ -1,8 +1,15 @@
 // Colors
 $color-primary: #2B495E;
 $color-primary-light: #4fc3c7;
+$color-primary-dark: rgb(30, 62, 85);
 
 $color-secondary: #f1491f;
+
+$color-tertiary: rgb(223, 135, 84);
+
+$color-dark-1: #4A4A4A;
+
+$color-gray: #9c9c9c;
 
 /// Contact buttons
 $color-btn-facebook: #3B5998;
@@ -20,3 +27,6 @@ $font-size-xl: 2.4rem;
 $font-size-xxl: 3.8rem;
 $font-size-xxxl: 5rem;
 $font-size-xxxxl: 10rem;
+
+// Font style
+$font-style-project: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;

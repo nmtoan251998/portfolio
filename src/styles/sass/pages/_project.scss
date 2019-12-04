@@ -1,0 +1,16 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+
+    @include breakpoint(md-laptop-d) {
+        margin-bottom: 1.5rem;
+    }
+
+    @include breakpoint(xs-laptop-d) {
+        margin-bottom: 3.5rem;
+    }
+}

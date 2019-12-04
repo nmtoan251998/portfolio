@@ -1,26 +1,150 @@
 extends ../layout/common.pug
 block vars
-    - var title="Welcome to Noat portfolio - Home page"
+    - var title="Welcome to Noat portfolio - Project page"
 
 //- stylesheets
 block link
     //- main file
-    link(rel="stylesheet" href="./../../styles/sass/home.scss")
+    link(rel="stylesheet" href="./../../styles/sass/project.scss")
 
 block container            
     //- put content here
-    .home-container
-        img.intro-img(src="../../assets/image/undraw_dev_productivity_umsq.svg" alt="Home logo")
-        h1.intro-heading
-            | Hello my friends, I'm Toan and just call me Noat.
-        p.intro-text
-            | I am currently working as a Back-end web developer. But when my teammates get into trouble and need my help, I become a superman to take care of their health and motivate them to complete the whole work, I quit.
-        p.intro-text
-            | I am also a Cat Father of a stupid fatty cat. She is so crazy, lazy, stupid and scratches me every f***king single time I take her a shower, but I still love her wtf?. 
-            | You are a cat's lover too and want to raise her? 
-            a(href="/contact") Contact me 
-            | and give me a job then I can make money to marry you and we will raise my p*ssy cat together (in case you are a female).
+    .project-container
+        .project
+            h2.project-title
+                | HTX 4.0
+            p.project-time
+                | 11/2019 - current
+            img.project-img(src="../../assets/image/undraw_project_completed_w0oq.svg" alt="Project logo")
+            p.project-info
+                | Goal:
+            p.project-detail
+                | Develop a system for agricultural production process managing and diary logging.
+            p.project-info
+                | Missions:
+            ul.project-detail-list
+                li
+                    a.project-detail
+                        | Analyse the requirements.
+                li
+                    a.project-detail
+                        | Analyse and design ERD, UML, Database.
+                li
+                    a.project-detail
+                        | Design web template using Figma and Bootstrap studio.
+                li
+                    a.project-detail
+                        | Develop Frontend (web) service using ReactJs.
+                li
+                    a.project-detail
+                        | Develop Backend APIs for mobile and web service.
+            p.project-info
+                | Technologies:
+            p.project-detail
+                | NodeJS - ExpressJs, ReactJs, Bootstrap4, MongoDb.
 
-block script
-    //- slick
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+        .project
+            h2.project-title
+                | Live streaming video
+            p.project-time
+                | 08/2019 - 09/2019
+            img.project-img(src="../../assets/image/undraw_project_completed_w0oq.svg" alt="Project logo")
+            p.project-info
+                | Goal:
+            p.project-detail
+                | Develop video live-streaming web application to live-streaming the sport videos.
+            p.project-info
+                | Missions:
+            ul.project-detail-list
+                li
+                    a.project-detail
+                        | Design web template to meet user's requirements using Figma.
+                li
+                    a.project-detail
+                        | Convert designed template to HTML by using Pug view engine and styling with SASS, CSS.
+            p.project-info
+                | Technologies:
+            p.project-detail
+                | NodeJs - ExpressJs, Bootstrap4, MongoDb, Pug, Nginx, SASS, Parcel.
+
+        .project
+            h2.project-title
+                | Fitness tracker
+            p.project-time
+                | 09/2019 - 11/2019
+            img.project-img(src="../../assets/image/undraw_project_completed_w0oq.svg" alt="Project logo")
+            p.project-info
+                | Goal:
+            p.project-detail
+                | Develop IOT healthcare system to monitor users using Mi Band 2.
+            p.project-info
+                | Missions:
+            ul.project-detail-list
+                li
+                    a.project-detail
+                        | Make UI for: Home page, Guideline page, News paper page.
+                li
+                    a.project-detail
+                        | Develop Python program to connect with Mi Band 2.
+                li
+                    a.project-detail
+                        | Analyse and develop APIs to interact with data from Python program.
+                li
+                    a.project-detail
+                        | Develop realtime service using Socket.io to send data to browser repeatedly.
+                li
+                    a.project-detail
+                        | Crawl data to develop function: Read new healthy papers daily.
+            p.project-info
+                | Technologies:
+            p.project-detail
+                | Python, NodeJs - ExpressJs, Socket.io, Bootstrap4, MongoDb, Puppeteer, Redis.
+
+        .project
+            h2.project-title
+                | X - CMS
+            p.project-time
+                | 06/2019 - 07/2019
+            img.project-img(src="../../assets/image/undraw_project_completed_w0oq.svg" alt="Project logo")
+            p.project-info
+                | Goal:
+            p.project-detail
+                | Develop a system to manage CodersX's Facebook fanpage.
+            p.project-info
+                | Missions:
+            ul.project-detail-list
+                li
+                    a.project-detail
+                        | Develop function to download image from DOM structure (HTML).
+                li
+                    a.project-detail
+                        | Interact with facebook GraphAPI and publishing local data to facebook page.
+            p.project-info
+                | Technologies:
+            p.project-detail
+                | NodeJs - ExpressJs, Bootstrap4, MongoDb, Graph API.
+        
+        .project
+            h2.project-title
+                | Coders.Tokyo Cantho quiz app
+            p.project-time
+                | 05/2019 - 06/2019
+            img.project-img(src="../../assets/image/undraw_project_completed_w0oq.svg" alt="Project logo")
+            p.project-info
+                | Goal:
+            p.project-detail
+                | Develop a web application to play quiz.
+            p.project-info
+                | Missions:
+            ul.project-detail-list
+                li
+                    a.project-detail
+                        | Develop quiz function.
+                li
+                    a.project-detail
+                        | Crawl quiz data from others sites.
+            p.project-info
+                | Technologies:
+            p.project-detail
+                | NodeJs - ExpressJs, Bootstrap4, Ejs.
+        
