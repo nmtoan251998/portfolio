@@ -81,3 +81,12 @@
         }
     }
 }
+
+.coders-img {
+    margin: 1rem auto 0;
+    max-width: 70%;
+
+    @include breakpoint(lg-laptop-d) {
+        max-width: 90%;
+    }
+}
