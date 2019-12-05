@@ -1,14 +1,15 @@
+- var navItems = ['index.pug', 'project.pug', 'cv.pug'];
 header.header
     nav.nav-left
         img.img-logo(src="../../assets/image/Nguyễn Minh Toàn.png")
     nav.nav-right
         ul.right-list
             li.right-list-item
-                a.right-list-link(href="/home")
+                a.right-list-link(href="/" + navItems[0])
                     | Home
             li.right-list-item
-                a.right-list-link(href="/project")
+                a.right-list-link(href="/" + navItems[1])
                     | Project
             li.right-list-item
-                a.right-list-link(href="/cv")
+                a.right-list-link(href="/" + navItems[2])
                     | CV
