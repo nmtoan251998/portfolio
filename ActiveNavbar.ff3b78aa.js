@@ -123,11 +123,9 @@ var navItems = document.querySelectorAll('.right-list-link');
 if (window.location.pathname === '/') {
   navItems[0].classList.add('active-navbar');
 } else {
-  var pathname = window.location.pathname.match(/\/\w+/)[0];
-  var currentLocation = pathname.slice(1, pathname.length);
   navItems.forEach(function (item) {
-    var navLinkPathname = item.pathname.match(/\/\w+/)[0];
-    var navLinkLocation = navLinkPathname.slice(1, navLinkPathname.length);
+    var currentLocation = window.location.pathname;
+    var navLinkLocation = item.href.pathname;
 
     if (navLinkLocation == currentLocation) {
       item.classList.add('active-navbar');
