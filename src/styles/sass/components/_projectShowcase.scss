@@ -2,20 +2,31 @@
     display: flex;
     flex-direction: column;    
     max-width: 95%;
-    margin: 1rem auto 5rem;
+    margin: 1rem auto 3.5rem;
+    @include breakpoint(md-mobile-d) {
+        margin-bottom: 1.5rem;
+    }
 
     &:not(:nth-child(1)) {
         border-top: 1px solid $color-primary;
     }
     
-    &-img {
+    &-video {
         max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    &-img {
+        max-width: 50%;
+        margin: 1rem auto;
     }
     
     &-title {
         font-size: $font-size-xxxl;
         @include breakpoint(lg-tablet-d) {
             font-size: $font-size-xxl;
+        }
+        @include breakpoint(md-mobile-d) {
+            font-size: $font-size-xl;
         }
 
         font-family: $font-style-project;
@@ -28,6 +39,9 @@
         @include breakpoint(lg-tablet-d) {
             font-size: $font-size-lg;
         }
+        @include breakpoint(lg-tablet-d) {
+            font-size: $font-size-md;
+        }
         font-style: italic;
         font-weight: 600;
         color: $color-gray;
@@ -38,6 +52,9 @@
         font-size: 3.5rem;
         @include breakpoint(lg-tablet-d) {
             font-size: 2.6rem;
+        }
+        @include breakpoint(md-mobile-d) {
+            font-size: 2rem;
         }
 
         color: $color-tertiary;
@@ -51,12 +68,22 @@
         @include breakpoint(lg-tablet-d) {
             font-size: 1.8rem;
         }
+        @include breakpoint(md-mobile-d) {
+            font-size: 1.4rem;
+        }
+
         color: $color-primary;
         max-width: 90%;
-        margin-bottom: 2.5rem;
+        margin-bottom: 1.5rem;
+        @include breakpoint(md-mobile-d) {
+            margin-bottom: 1rem;
+        }
 
         &-list {
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.5rem;
+            @include breakpoint(md-mobile-d) {
+                margin-bottom: 1rem;
+            }
             padding-left: 3rem;
             list-style: disc;
         }
