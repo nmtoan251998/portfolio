@@ -7,7 +7,7 @@
     "clean": "rimraf rm dist/*",
     "start": "npm run clean && parcel ./src/views/pages/*.pug --out-dir ./dist --open --port 3000 --no-cache",
     "build": "npm run clean && parcel build src/views/pages/*.pug --out-dir ./dist --no-source-maps --detailed-report --no-cache --no-minify",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
