@@ -118,14 +118,20 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"fi6J":[function(require,module,exports) {
-var pathname = window.location.pathname.match(/\/\w+/)[0];
-var currentLocation = pathname.slice(1, pathname.length);
-document.querySelectorAll('.right-list-link').forEach(function (item) {
-  var navLinkPathname = item.pathname.match(/\/\w+/)[0];
-  var navLinkLocation = navLinkPathname.slice(1, navLinkPathname.length);
+var navItems = document.querySelectorAll('.right-list-link');
 
-  if (navLinkLocation == currentLocation) {
-    item.classList.add('active-navbar');
-  }
-});
+if (window.location.pathname === '/') {
+  navItems[0].classList.add('active-navbar');
+} else {
+  var pathname = window.location.pathname.match(/\/\w+/)[0];
+  var currentLocation = pathname.slice(1, pathname.length);
+  navItems.forEach(function (item) {
+    var navLinkPathname = item.pathname.match(/\/\w+/)[0];
+    var navLinkLocation = navLinkPathname.slice(1, navLinkPathname.length);
+
+    if (navLinkLocation == currentLocation) {
+      item.classList.add('active-navbar');
+    }
+  });
+}
 },{}]},{},["fi6J"], null)
