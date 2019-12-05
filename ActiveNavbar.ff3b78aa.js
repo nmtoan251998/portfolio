@@ -124,7 +124,7 @@ if (window.location.pathname === '/portfolio/') {
   navItems[0].classList.add('active-navbar');
 } else {
   navItems.forEach(function (item) {
-    var currentLocation = window.location.pathname;
+    var currentLocation = window.location.href;
     var navLinkLocation = item.href;
 
     if (navLinkLocation == currentLocation) {
