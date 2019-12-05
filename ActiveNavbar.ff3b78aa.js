@@ -120,12 +120,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"fi6J":[function(require,module,exports) {
 var navItems = document.querySelectorAll('.right-list-link');
 
-if (window.location.pathname === '/') {
+if (window.location.pathname === '/portfolio/') {
   navItems[0].classList.add('active-navbar');
 } else {
   navItems.forEach(function (item) {
     var currentLocation = window.location.pathname;
-    var navLinkLocation = item.href.pathname;
+    var navLinkLocation = item.href;
 
     if (navLinkLocation == currentLocation) {
       item.classList.add('active-navbar');
