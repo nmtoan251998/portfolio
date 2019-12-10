@@ -1,6 +1,6 @@
 # My portfolio Website
+Feel free to use and modify the source code to fit your needs
 
-Feel free to use and modify the source code to fit your requirements
 ## Installation
 ```
 $ git clone https://github.com/nmtoan251998/portfolio.git
@@ -28,17 +28,20 @@ Development
 ```
 $ npm start
 ```
-## Production
+## Build
 Build production source code
 ```
 $ npm run build
 ```
 
-**HOT FIX**
+**NOTES**
 
-There will be a problem building production because of files path. After running `npm run build`, you have to go to the .html file in dist/ to rename the path to exact path (sorry forks who use my source code as a serverless web app, I configured the production for server purpose)
+- The built source code from /src will be minifized and generated into /dist.
+- Because of human readable reason, I split /dist and /build into 2 seperated folders.
+- All the source code in folder build will be deployed to github.io host*
 
+## Deploy to github.io
 ```
-$ npm run deploy
+npm run deploy
 ```
-
+Please make sure to **put what you want to be deployed to github.io in /build folder**
