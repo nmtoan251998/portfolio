@@ -7,6 +7,25 @@
         margin-bottom: 1.5rem;
     }
 
+    &-item-responsive {
+        &-display {
+            display: none;
+            margin-bottom: 1rem;
+        }
+
+        @include breakpoint(mobile-d) {
+            &-hidden {
+                display: none;
+            }
+    
+            &-display {
+                display: block;
+                min-width: 50%;
+                height: 20rem;
+            }
+        }
+    }
+
     &:not(:nth-child(1)) {
         border-top: 1px solid $color-primary;
     }
