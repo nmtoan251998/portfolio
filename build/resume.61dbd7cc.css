@@ -239,7 +239,7 @@ body {
   border-right-width: 4px;
 }
 
-.cv-container {
+.resume-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,12 +249,12 @@ body {
   margin-bottom: 3.5rem;
 }
 @media only screen and (max-width: 1200px) {
-  .cv-container {
+  .resume-container {
     margin-bottom: 1.5rem;
   }
 }
 @media only screen and (max-width: 900px) {
-  .cv-container {
+  .resume-container {
     margin-bottom: 3.5rem;
   }
 }
@@ -275,6 +275,6 @@ body {
   }
 }
 
-.cv-img {
+.resume-img {
   max-width: 100%;
 }
