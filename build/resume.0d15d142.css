@@ -1,0 +1,284 @@
+/**
+* reset the universal setting or box-model
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,700i&display=swap&subset=vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+@import url("https://fonts.googleapis.com/css?family=Lusitana:400,700");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/**
+* default font-size = 10px;
+*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Source Sans Pro", "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-pt-s {
+  padding-top: 1rem;
+}
+
+.u-pt-m {
+  padding-top: 2.5rem;
+}
+
+.u-pt-l {
+  padding-top: 5rem;
+}
+
+.u-pb-s {
+  padding-bottom: 1rem;
+}
+
+.u-pb-m {
+  padding-bottom: 2.5rem;
+}
+
+.u-pb-l {
+  padding-bottom: 5rem;
+}
+
+.u-mt-s {
+  margin-top: 1rem;
+}
+
+.u-mt-m {
+  margin-top: 2rem;
+}
+
+.u-mt-l {
+  margin-top: 5rem;
+}
+
+.u-mt-xl {
+  margin-top: 7.5rem;
+}
+
+.u-mt-xxl {
+  margin-top: 10rem;
+}
+
+.u-mt-xxxl {
+  margin-top: 12.5rem;
+}
+
+.u-mb-s {
+  margin-bottom: 1rem;
+}
+
+.u-mb-m {
+  margin-bottom: 2rem;
+}
+
+.u-mb-l {
+  margin-bottom: 5rem;
+}
+
+.u-mb-xl {
+  margin-bottom: 7.5rem;
+}
+
+.u-mb-xxl {
+  margin-bottom: 10rem;
+}
+
+.u-mb-xxxl {
+  margin-bottom: 12.5rem;
+}
+
+.u-float-left {
+  float: left;
+}
+
+.u-float-right {
+  float: right;
+}
+
+.u-align-self-center {
+  align-self: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5rem 7.5rem 0;
+  margin-bottom: 1.5rem;
+}
+@media only screen and (max-width: 720px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header {
+    margin-bottom: 0rem;
+  }
+}
+
+.img-logo {
+  width: 20rem;
+  height: 20rem;
+}
+@media only screen and (max-width: 720px) {
+  .img-logo {
+    margin-bottom: 2rem;
+  }
+}
+
+.right-list {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.8rem;
+}
+.right-list-item:not(:last-child) {
+  margin-right: 5rem;
+}
+.right-list-link {
+  color: #2B495E;
+}
+
+.active-navbar {
+  color: lightseagreen;
+  text-decoration: underline;
+}
+
+.btn-download {
+  background: none;
+  border: none;
+  padding: 1em 2em;
+  width: 20rem;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Roboto Slab", sans-serif;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  text-align: center;
+}
+@media only screen and (max-width: 450px) {
+  .btn-download {
+    padding: 0.8em 1.6em;
+    width: 18rem;
+  }
+}
+.btn-download:focus {
+  outline: 2px dotted #4fc3c7;
+}
+
+.draw-border {
+  box-shadow: inset 0 0 0 4px #4fc3c7;
+  color: #4fc3c7;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+.draw-border:hover {
+  color: #2B495E;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #2B495E;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3.5rem;
+}
+@media only screen and (max-width: 1200px) {
+  .resume-container {
+    margin-bottom: 1.5rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .resume-container {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.intro-img {
+  max-width: 100%;
+  height: 50rem;
+}
+@media only screen and (max-width: 580px) {
+  .intro-img {
+    height: 40rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .intro-img {
+    margin-top: 2rem;
+    height: 30rem;
+  }
+}
+
+.resume-img {
+  max-width: 100%;
+}
