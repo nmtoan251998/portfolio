@@ -7,7 +7,7 @@
     "clean": "rimraf rm dist/*",
     "start": "npm run clean && parcel ./src/views/pages/*.pug --out-dir ./dist --open --port 11111 --no-cache",
     "build": "parcel build src/views/pages/*.pug --out-dir ./ --no-source-maps --detailed-report --no-cache --no-minify --public-url ./",
-    "deploy": "git add . && git commit -m 'deploy' && git push"
+    "deploy": "npm run build && git add . && git commit -m 'deploy' && git push"
   },
   "keywords": [],
   "author": "",

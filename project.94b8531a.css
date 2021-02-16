@@ -1,0 +1,311 @@
+/**
+* reset the universal setting or box-model
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,700i&display=swap&subset=vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+@import url("https://fonts.googleapis.com/css?family=Lusitana:400,700");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/**
+* default font-size = 10px;
+*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Source Sans Pro", "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-pt-s {
+  padding-top: 1rem;
+}
+
+.u-pt-m {
+  padding-top: 2.5rem;
+}
+
+.u-pt-l {
+  padding-top: 5rem;
+}
+
+.u-pb-s {
+  padding-bottom: 1rem;
+}
+
+.u-pb-m {
+  padding-bottom: 2.5rem;
+}
+
+.u-pb-l {
+  padding-bottom: 5rem;
+}
+
+.u-mt-s {
+  margin-top: 1rem;
+}
+
+.u-mt-m {
+  margin-top: 2rem;
+}
+
+.u-mt-l {
+  margin-top: 5rem;
+}
+
+.u-mt-xl {
+  margin-top: 7.5rem;
+}
+
+.u-mt-xxl {
+  margin-top: 10rem;
+}
+
+.u-mt-xxxl {
+  margin-top: 12.5rem;
+}
+
+.u-mb-s {
+  margin-bottom: 1rem;
+}
+
+.u-mb-m {
+  margin-bottom: 2rem;
+}
+
+.u-mb-l {
+  margin-bottom: 5rem;
+}
+
+.u-mb-xl {
+  margin-bottom: 7.5rem;
+}
+
+.u-mb-xxl {
+  margin-bottom: 10rem;
+}
+
+.u-mb-xxxl {
+  margin-bottom: 12.5rem;
+}
+
+.u-float-left {
+  float: left;
+}
+
+.u-float-right {
+  float: right;
+}
+
+.u-align-self-center {
+  align-self: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5rem 7.5rem 0;
+  margin-bottom: 1.5rem;
+}
+@media only screen and (max-width: 720px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header {
+    margin-bottom: 0rem;
+  }
+}
+
+.img-logo {
+  width: 20rem;
+  height: 20rem;
+}
+@media only screen and (max-width: 720px) {
+  .img-logo {
+    margin-bottom: 2rem;
+  }
+}
+
+.right-list {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.8rem;
+}
+.right-list-item:not(:last-child) {
+  margin-right: 5rem;
+}
+.right-list-link {
+  color: #2B495E;
+}
+
+.active-navbar {
+  color: lightseagreen;
+  text-decoration: underline;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 1rem auto 4rem;
+}
+.project-item-responsive-display {
+  display: none;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 450px) {
+  .project-item-responsive-hidden {
+    display: none;
+  }
+  .project-item-responsive-display {
+    display: block;
+    min-width: 50%;
+    height: 20rem;
+  }
+}
+.project-video {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+.project-img-50 {
+  max-width: 50%;
+  margin: 1rem auto;
+}
+.project-img-100 {
+  max-width: 100%;
+}
+.project-title {
+  font-size: 5rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #4A4A4A;
+  text-align: left;
+}
+@media only screen and (max-width: 840px) {
+  .project-title {
+    font-size: 3.8rem;
+  }
+}
+.project-pos {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #9c9c9c;
+  text-align: left;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 840px) {
+  .project-pos {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .project-pos {
+    font-size: 1.6rem;
+    margin-top: -5px;
+  }
+}
+.project-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: flex-start;
+  padding-bottom: 0.8rem;
+}
+.project-info {
+  font-size: 3rem;
+  display: inline-block;
+  color: #1e3e55;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+@media only screen and (max-width: 840px) {
+  .project-info {
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .project-info {
+    font-size: 2rem;
+  }
+}
+.project-detail {
+  text-align: left;
+  font-size: 2rem;
+  display: inline-block;
+  color: #2B495E;
+  max-width: 90%;
+  margin-left: 1.5rem;
+}
+@media only screen and (max-width: 840px) {
+  .project-detail {
+    font-size: 1.8rem;
+    margin-top: 2px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .project-detail {
+    margin-top: 3.5px;
+    font-size: 1.6rem;
+  }
+}
+.project-detail-list {
+  padding-left: 3rem;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+.project-link {
+  color: -webkit-link;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3.5rem;
+}
+@media only screen and (max-width: 1200px) {
+  .project-container {
+    margin-bottom: 1.5rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .project-container {
+    margin-bottom: 3.5rem;
+  }
+}
