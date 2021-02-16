@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf rm dist/*",
     "start": "npm run clean && parcel ./src/views/pages/*.pug --out-dir ./dist --open --port 11111 --no-cache",
-    "build": "npm run clean && parcel build src/views/pages/*.pug --out-dir ./build --no-source-maps --detailed-report --no-cache --no-minify",
+    "build": "npm run clean && parcel build src/views/pages/*.pug --out-dir ./build --no-source-maps --detailed-report --no-cache --no-minify --public-url ../build",
     "deploy": "gh-pages -d build"
   },
   "keywords": [],
