@@ -1,11 +1,8 @@
 .project {
     display: flex;
     flex-direction: column;    
-    max-width: 95%;
-    margin: 1rem auto 3.5rem;
-    @include breakpoint(md-mobile-d) {
-        margin-bottom: 1.5rem;
-    }
+    width: 95%;
+    margin: 1rem auto 4rem;
 
     &-item-responsive {
         &-display {
@@ -26,10 +23,6 @@
         }
     }
 
-    &:not(:nth-child(1)) {
-        border-top: 1px solid $color-primary;
-    }
-    
     &-video {
         max-width: 100%;
         margin-bottom: 1rem;
@@ -47,31 +40,39 @@
         @include breakpoint(lg-tablet-d) {
             font-size: $font-size-xxl;
         }
-        @include breakpoint(md-mobile-d) {
-            font-size: $font-size-xl;
-        }
 
         font-family: $font-style-project;
         color: $color-dark-1;
         text-align: left;
     }
 
-    &-time {
-        font-size: $font-size-xl;
+    &-pos {
+        font-size: $font-size-l;
         @include breakpoint(lg-tablet-d) {
             font-size: $font-size-lg;
         }
         @include breakpoint(lg-tablet-d) {
             font-size: $font-size-md;
+            margin-top: -5px;
         }
-        font-style: italic;
         font-weight: 600;
         color: $color-gray;
         text-align: left;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    &-block {
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        align-items: flex-start;
+        padding-bottom: .8rem;
     }
 
     &-info {        
-        font-size: 3.5rem;
+        font-size: 3rem;
         @include breakpoint(lg-tablet-d) {
             font-size: 2.6rem;
         }
@@ -79,36 +80,42 @@
             font-size: 2rem;
         }
 
-        color: $color-tertiary;
+        display: inline-block;
+        color: $color-primary-dark;
         text-align: left;    
         font-family: $font-style-project;
     }
-    
+
     &-detail {
         text-align: left;
         font-size: 2rem;
         @include breakpoint(lg-tablet-d) {
             font-size: 1.8rem;
+            margin-top: 2px;
         }
         @include breakpoint(md-mobile-d) {
-            font-size: 1.4rem;
+            margin-top: 3.5px;
+            font-size: 1.6rem;
         }
 
+        display: inline-block;
         color: $color-primary;
         max-width: 90%;
-        margin-bottom: 1.5rem;
-        @include breakpoint(md-mobile-d) {
-            margin-bottom: 1rem;
-        }
+        margin-left: 1.5rem;
 
         &-list {
-            margin-bottom: 1.5rem;
-            @include breakpoint(md-mobile-d) {
-                margin-bottom: 1rem;
-            }
+            // margin-bottom: 1.5rem;
+            // @include breakpoint(md-mobile-d) {
+            //     margin-bottom: 1rem;
+            // }
             padding-left: 3rem;
-            list-style: disc;
+            list-style-type: disc;
+            list-style-position: outside;
         }
+    }
+
+    &-link {
+        color: $color-tertiary;
     }
 }
 
